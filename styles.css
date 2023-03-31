@@ -47,9 +47,9 @@ body {
   .container {
     border: white 1px solid;
     padding: 10px;
-    flex-basis: 70%;
-    margin: 5px;
-    height: ;
+    flex-basis: 85%;
+    margin: 10px;
+
     display: none;
   }
   .welcome {
