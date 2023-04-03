@@ -63,6 +63,7 @@ body {
     width: 400px;
     height: 350px;
     border: 1px white solid;
+    display: inline-flex;
   }
   .cert-img {
     width: 400px;
