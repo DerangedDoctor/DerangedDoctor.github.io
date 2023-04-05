@@ -49,6 +49,7 @@ body {
 
   .container {
     grid-area: 2 / 2 / span 7 / span 4;
+    background-color: rgb(37, 37, 37);
     box-shadow: 5px 5px 5px black;
   }
   .hidden {
