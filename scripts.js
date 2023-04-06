@@ -1,7 +1,4 @@
-function showAndSetActive(x) {
-  show(x);
-  setActiveId(x);
-};
+
 // cycles between showing and hiding the textbox elements
 //if the element is already visible, it will hide it and show the welcome element
 //if the element is hidden, it will show it and hide the welcome element
@@ -22,7 +19,9 @@ function show(x) {
   } };
 
   function setActiveId(x) {
-    var x = x + "1";
+    //adds 1 to the end of the id to match the id of the corresponding button
+    x = x + "1";
+    //if the element is already active, it will remove the active class
     if (document.getElementById(x).classList.contains("active")) {
       document.getElementById(x).classList.remove("active");
     } else {
@@ -33,9 +32,7 @@ function show(x) {
       document.getElementById(x).classList.add("active");
     }
   };
-
-  //take the above functions and nest the set active function inside the show function still using the x variable
   function showAndSetActive(x) {
     show(x);
     setActiveId(x);
-  };
+  };   
