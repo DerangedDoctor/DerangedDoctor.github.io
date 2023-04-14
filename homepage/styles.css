@@ -25,7 +25,8 @@ body {
   .pic {
     grid-area: 2 / 1 / span 1 / span 1;
     border: 1px white solid;
-    width: 100%;
+    width: 200px;
+    justify-self: center;
   }
   .nav {
     display: grid;
@@ -33,6 +34,7 @@ body {
     margin: 1px;  
     grid-area: 3 / 1 / span 1 / span 1;  
     grid-template: repeat(4, 1fr) / 1fr;
+    
   }
   .active {
     background-color: rgb(37, 37, 37);
