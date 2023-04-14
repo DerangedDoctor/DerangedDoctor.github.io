@@ -8,7 +8,7 @@ body {
     grid-template-columns: 200px repeat(4, 1fr);
     grid-template-rows: 10% 200px 200px 1fr 10%;
     gap: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
 
   }
   header {
