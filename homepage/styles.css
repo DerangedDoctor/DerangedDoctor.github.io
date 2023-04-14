@@ -5,7 +5,7 @@ body {
     margin: 25px;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-template-rows: 100px 200px 200px 1fr 5%;
+    grid-template-rows: 100px 200px 200px 1fr 100px;
     gap: 20px;
 
   }
@@ -23,6 +23,7 @@ body {
   .pic {
     grid-area: 2 / 1 / span 1 / span 1;
     border: 1px white solid;
+    width: 100%;
   }
   .nav {
     display: grid;
@@ -45,7 +46,7 @@ body {
     display: block;
     margin: 10px auto;
     text-align: center;
-    width: 150px;
+    width: 90%;
     box-shadow: 5px 5px 5px black;
     background-color: rgb(37, 37, 37);
   
@@ -109,11 +110,14 @@ body {
     }
   }
   @media screen and (max-width: 700px) {
+    body {
+      grid-template: 100px 200px 1fr 100px / repeat(2, 1fr);
+    }
     .container {
-      grid-area: 3 / 1 / span 2 / span 5;
+      grid-area: 3 / 1 / span 1 / span 2;
     }
     .nav {
-      grid-area: 2 / 2 / span 1 / span 4;
+      grid-area: 2 / 2 / span 1 / span 1;
     }
     .pic {
       grid-area: 2 / 1 / span 1 / span 1;
