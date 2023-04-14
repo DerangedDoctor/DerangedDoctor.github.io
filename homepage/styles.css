@@ -3,10 +3,12 @@ body {
     font-family: "Lato", sans-serif;
     background-color: rgb(72, 72, 72);
     margin: 25px;
+    width: 95%;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-template-rows: 100px 200px 200px 1fr 100px;
+    grid-template-rows: 10% 200px 200px 1fr 10%;
     gap: 20px;
+    overflow: hidden;
 
   }
   header {
@@ -65,7 +67,7 @@ body {
     box-shadow: 5px 5px 5px black;
     text-align: center;
     transform: translateX(100%);
-    height: 100%;
+    height: fit-content;
    
   }
   .visible {
@@ -85,7 +87,7 @@ body {
     display: inline;
   }
   .cert-img {
-    width: 20%;
+    width: 400px;
     height: auto;
     min-width: 250px;
   }
@@ -123,4 +125,4 @@ body {
       grid-area: 2 / 1 / span 1 / span 1;
     }
   }
-  
+    
