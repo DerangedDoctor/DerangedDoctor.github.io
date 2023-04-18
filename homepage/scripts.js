@@ -3,14 +3,15 @@
 //if the element is already visible, it will hide it and show the welcome element
 //if the element is hidden, it will show it and hide the welcome element
 function show(x) {
-  var elements = ["welcome", "about", "certifications", "projects", "contact"];
+ let elements = ["welcome", "about", "certifications", "projects", "contact"];
+
   if (document.getElementById(x).classList.contains("visible")) {
   document.getElementById("welcome").classList.add("visible");
   document.getElementById("welcome").classList.remove("hidden");
   document.getElementById(x).classList.add("hidden");
   document.getElementById(x).classList.remove("visible");
   } else { 
-    for (var i = 0; i < elements.length; i++) {
+    for (let i = 0; i < elements.length; i++) {
       document.getElementById(elements[i]).classList.add("hidden");
       document.getElementById(elements[i]).classList.remove("visible");
     }
@@ -26,8 +27,8 @@ function show(x) {
       document.getElementById(x).classList.remove("active");
     } else {
       let elements = ["about1", "certifications1", "projects1", "contact1"];
-      for (var i = 0; i < elements.length; i++) {
-        document.getElementById(elements[i]).classList.remove("active");
+      for (let j = 0; j < elements.length; j++) {
+        document.getElementById(elements[j]).classList.remove("active");
       }
       document.getElementById(x).classList.add("active");
     }
