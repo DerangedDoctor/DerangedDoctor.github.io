@@ -1,8 +1,6 @@
-
 // cycles between showing and hiding the textbox elements
 //if the element is already visible, it will hide it and show the welcome element
 //if the element is hidden, it will show it and hide the welcome element
-
 function show(x) {
 let idOfX = document.getElementById(x);
 let idOfWelcome = document.getElementById("welcome");
