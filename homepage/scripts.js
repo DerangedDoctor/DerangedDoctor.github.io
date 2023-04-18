@@ -4,7 +4,6 @@
 //if the element is hidden, it will show it and hide the welcome element
 function show(x) {
  let elements = ["welcome", "about", "certifications", "projects", "contact"];
-
   if (document.getElementById(x).classList.contains("visible")) {
   document.getElementById("welcome").classList.add("visible");
   document.getElementById("welcome").classList.remove("hidden");
@@ -21,7 +20,7 @@ function show(x) {
 
   function setActiveId(x) {
     //adds 1 to the end of the id to match the id of the corresponding button
-    x = x + "1";
+    x = x + "1";    
     //if the element is already active, it will remove the active class
     if (document.getElementById(x).classList.contains("active")) {
       document.getElementById(x).classList.remove("active");
