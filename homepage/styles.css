@@ -6,7 +6,7 @@ body {
     width: 95%;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-template-rows: 100px 200px 200px 1fr 100px;
+    grid-template-rows: 10% 200px 200px 1fr 10%;
     gap: 20px;
     overflow-x: hidden;
 
@@ -26,6 +26,8 @@ body {
   .pic {
     grid-area: 2 / 1 / span 1 / span 1;
     border: 1px white solid;
+    width: 200px;
+    justify-self: center;
   }
   .nav {
     display: grid;
@@ -42,7 +44,7 @@ body {
   }
   
   .nav a {
-    padding: 10px 10px 10px;
+    padding: 5px 10px 5px;
     font-size: 20px;
     color: #ffffff;
     display: block;
@@ -83,12 +85,18 @@ body {
     transition: visibility 0s .5s, opacity .5s linear;
     animation: slide-out 1s ease-in-out forwards;
   }
+
+  figure {
+    display: inline;
+  }
+
   .cert-img {
     width: 20%;
     height: auto;
+    min-width: 250px;
   }
   footer {
-    grid-area: 8 / 1 / span 1 / span 5;
+    grid-area: 5 / 1 / span 1 / span 5;
   }
 
   @keyframes slide-in {
@@ -107,4 +115,18 @@ body {
       transform: translateX(100%);
     }
   }
-  
+
+  @media screen and (max-width: 700px) {
+    body {
+      grid-template: 100px 200px 1fr 100px / repeat(2, 1fr);
+    }
+    .container {
+      grid-area: 3 / 1 / span 1 / span 2;
+    }
+    .nav {
+      grid-area: 2 / 2 / span 1 / span 1;
+    }
+    .pic {
+      grid-area: 2 / 1 / span 1 / span 1;
+    }
+  }
