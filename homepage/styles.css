@@ -2,15 +2,13 @@
 body {
     font-family: "Lato", sans-serif;
     background-color: rgb(72, 72, 72);
-    margin: 25px;
-    width: 95%;
+    padding: 10px;
+    width: 100%;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-template-rows: 10% 200px 200px 1fr 10%;
+    grid-template-rows: 8% 200px 200px 1fr 5%;
     gap: 20px;
     overflow-x: hidden;
-
-
   }
   header {
     grid-area: 1 / 1 / span 1 / span 5;
@@ -70,6 +68,7 @@ body {
     text-align: center;
     transform: translateX(100%);
     height: fit-content;
+    width: 95%;
    
   }
   .visible {
