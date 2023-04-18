@@ -2,13 +2,14 @@
 body {
     font-family: "Lato", sans-serif;
     background-color: rgb(72, 72, 72);
-    margin: 25px;
+    margin: 20px;
     width: 95%;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
     grid-template-rows: 10% 200px 200px 1fr 10%;
     gap: 20px;
     overflow-x: hidden;
+
 
   }
   header {
