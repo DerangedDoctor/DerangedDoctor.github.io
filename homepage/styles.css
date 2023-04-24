@@ -23,9 +23,9 @@ body {
   }
   .pic {
     grid-area: 2 / 1 / span 1 / span 1;
-    border: 1px white solid;
     width: 200px;
     justify-self: center;
+    height: auto;
   }
   .pic img {
     width: 100%;
