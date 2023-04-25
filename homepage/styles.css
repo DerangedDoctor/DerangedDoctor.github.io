@@ -38,13 +38,7 @@ body {
     grid-area: 3 / 1 / span 1 / span 1;  
     grid-template: repeat(4, 1fr) / 1fr;
   }
-  .active {
-    background-color: rgb(37, 37, 37);
-    color: #ffffff;
-    box-shadow: none !important;
-    transform: translate(5px, 5px);
-  }
-  
+
   .nav a {
     padding: 5px 10px 5px;
     font-size: 20px;
@@ -74,6 +68,12 @@ body {
     height: fit-content;
     width: 95%;
    
+  }
+  .active {
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    box-shadow: none !important;
+    transform: translate(5px, 5px);
   }
   .visible {
     visibility: visible;
